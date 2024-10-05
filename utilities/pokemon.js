@@ -8,6 +8,7 @@ const fetchPokemon = async (value = 1) => {
         const newData = response.data;
         pokemonData.name = newData.name;
         pokemonData.id = newData.id;
+        pokemonData.types = newData.types.map((typeObject) => { return typeObject.type.name });
         return pokemonData;
     }
     catch {
