@@ -7,7 +7,7 @@ const newHeader = [{
 },
 {
     value: 'value',
-    headerColor: 'red',
+    headerColor: 'blue',
     color:'green',
     width: 70,
     alias: 'VALUE'

@@ -4,8 +4,12 @@ const { commandsHeader, options } = require('./tableConfig');
 const listCommands = () => {
     const commands = [
         {
-            'command': 'random',
+            'command': '--random',
             'desc': 'this command lets you to fetch any random pokemon details.'
+        },
+        {
+            'command': '--random --l',
+            'desc': 'this command lets you to fetch any random pokemon details in the long format.'
         },
         {
             'command': '<name/id>',
@@ -29,4 +33,4 @@ const listCommands = () => {
     console.log(commandsList);
 };
 
-module.exports = {listCommands};
+module.exports = { listCommands };

@@ -1,6 +1,6 @@
 const {fetchPokemon} = require('./singlePokemon');
-const getDetails = async (arguments) => {
-    const pokemon = arguments[2];
+const getDetails = async (arguments, pokemonId = arguments[2]) => {
+    const pokemon = pokemonId;
     const pokemonData = await fetchPokemon(pokemon);
     const details = [
         { attribute: 'name', value: pokemonData.name },
