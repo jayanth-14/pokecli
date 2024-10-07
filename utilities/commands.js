@@ -9,14 +9,18 @@ const listCommands = () => {
         },
         {
             'command': '<name/id>',
-            'desc': 'the pokemon data will be fetched according to the name/id value given.'
+            'desc': 'the pokemon data will be fetched in short format with only minor details according to the name/id value given.'
         },
         {
-            'command': '-t <typeName>',
-            'desc': 'the `-t` flag followed by the type name gives you the details of the specified type.'
+            'command': '<name/id> --l',
+            'desc': 'the pokemon data will be fetched in long format with all the details according to the name/id value given.'
         },
         {
-            'command': '-help',
+            'command': '--t <typeName>',
+            'desc': 'the `--t` flag followed by the type name gives you the details of the specified type.'
+        },
+        {
+            'command': '--help',
             'desc': 'this command lists all the available features and commands to use them.'
         }
     ];

@@ -1,4 +1,4 @@
-const { fetchPokemon } = require('./pokemon');
+const { fetchPokemon } = require('./singlePokemon');
 const chalk = require('chalk');
 const { pokemonHeader, options } = require('./tableConfig');
 const Table = require('tty-table');

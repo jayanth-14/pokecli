@@ -1,18 +1,16 @@
-const pokemonHeader = [{
-    value: "name",
-    headerColor: "cyan",
-    color: "white",
-    width: 20
+const newHeader = [{
+    value: 'attribute',
+    headerColor: 'cyan',
+    color:'yellow',
+    width: 30,
+    alias: 'ATTRIBUTE'
 },
 {
-    value: "id",
-    color: "red",
-    width: 10,
-},
-{
-    value: "types",
-    color: "yellow",
-    width: 10,
+    value: 'value',
+    headerColor: 'red',
+    color:'green',
+    width: 70,
+    alias: 'VALUE'
 }];
 
 const commandsHeader = [{
@@ -39,4 +37,4 @@ const options = {
     width: "90%"
 }
 
-module.exports = {pokemonHeader, commandsHeader, options};
+module.exports = {newHeader, commandsHeader, options};
