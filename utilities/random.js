@@ -1,10 +1,7 @@
-const { default: axios, get } = require('axios');
 
-const getRandomPokemon = async () => {
-    const count = await axios.get('https://pokeapi.co/api/v2/pokemon/')
-                            .then((response) => {return response.data})
-                            .then((response) => {return response.count});
-    const randomId = Math.floor(Math.random(1)*count);
+const getRandomPokemon = () => {
+    const count = 10277;
+    const randomId = Math.floor(Math.random() * count) + 1;
     return randomId;
 };
 
